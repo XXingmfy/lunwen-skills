@@ -1,0 +1,155 @@
+{
+  "figure": "图3.2 管理员用例图",
+  "type": "usecase",
+  "nodes": [
+    {
+      "id": "actor",
+      "kind": "actor",
+      "text": "管理员",
+      "x": 0.3,
+      "y": 2.02,
+      "w": 0.95,
+      "h": 1.45,
+      "label": "管理员"
+    },
+    {
+      "id": "u1",
+      "kind": "ellipse",
+      "text": "管理员登录",
+      "x": 3.05,
+      "y": 0.35,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    },
+    {
+      "id": "u2",
+      "kind": "ellipse",
+      "text": "首页数据统计",
+      "x": 3.05,
+      "y": 1.01,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    },
+    {
+      "id": "u3",
+      "kind": "ellipse",
+      "text": "用户管理",
+      "x": 3.05,
+      "y": 1.67,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    },
+    {
+      "id": "u4",
+      "kind": "ellipse",
+      "text": "手机设备管理",
+      "x": 3.05,
+      "y": 2.33,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    },
+    {
+      "id": "u5",
+      "kind": "ellipse",
+      "text": "订单管理",
+      "x": 3.05,
+      "y": 2.99,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    },
+    {
+      "id": "u6",
+      "kind": "ellipse",
+      "text": "社区内容管理",
+      "x": 3.05,
+      "y": 3.6500000000000004,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    },
+    {
+      "id": "u7",
+      "kind": "ellipse",
+      "text": "优惠券与轮播图管理",
+      "x": 3.05,
+      "y": 4.31,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    },
+    {
+      "id": "u8",
+      "kind": "ellipse",
+      "text": "系统配置",
+      "x": 3.05,
+      "y": 4.97,
+      "w": 2.55,
+      "h": 0.48,
+      "size": 10
+    }
+  ],
+  "edges": [
+    {
+      "from": "actor",
+      "to": "u1",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u2",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u3",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u4",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u5",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u6",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u7",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u8",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    }
+  ],
+  "margin": 0.18
+}

@@ -1,0 +1,113 @@
+{
+  "title": "政务服务协同平台总体架构",
+  "subtitle": "分层架构 · 应用支撑与数据资源两级解耦",
+  "canvas": "16:9",
+  "layout": {
+    "margin_in": 0.42,
+    "band_gap_in": 0.17,
+    "cell_gap_in": 0.14,
+    "inner_pad_in": 0.09
+  },
+  "rails": {
+    "left": { "label": "标准规范体系" },
+    "right": { "label": "安全保障体系" }
+  },
+  "bands": [
+    {
+      "id": "access",
+      "label": "接入层",
+      "height_in": 1.05,
+      "groups": [
+        {
+          "label": "服务对象",
+          "items": [
+            { "id": "portal", "label": "政务服务门户", "sub": "PC 端" },
+            { "id": "mobile", "label": "移动服务端", "sub": "小程序 / APP" }
+          ]
+        },
+        {
+          "label": "外部对接",
+          "items": [
+            { "id": "openapi", "label": "开放接口网关", "sub": "REST / WebService" },
+            { "id": "third", "label": "第三方系统", "tone": "ghost" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app",
+      "label": "应用层",
+      "height_in": 1.12,
+      "groups": [
+        {
+          "label": "业务应用",
+          "items": [
+            { "id": "biz", "label": "事项办理", "tone": "accent" },
+            { "id": "query", "label": "综合查询", "tone": "accent" },
+            { "id": "stat", "label": "统计分析", "tone": "accent" }
+          ]
+        },
+        {
+          "label": "管理应用",
+          "items": [
+            { "id": "admin", "label": "系统管理" },
+            { "id": "audit", "label": "审计监督" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "label": "支撑层",
+      "height_in": 1.05,
+      "groups": [
+        {
+          "label": "公共支撑组件",
+          "items": [
+            { "id": "auth", "label": "统一身份认证" },
+            { "id": "flow", "label": "工作流引擎" },
+            { "id": "msg", "label": "消息服务" },
+            { "id": "report", "label": "报表服务" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "label": "数据层",
+      "height_in": 1.05,
+      "groups": [
+        {
+          "label": "数据资源",
+          "items": [
+            { "id": "db_biz", "label": "业务数据库", "sub": "MySQL" },
+            { "id": "db_share", "label": "共享交换库", "sub": "PostgreSQL" },
+            { "id": "db_log", "label": "日志与归档库", "sub": "对象存储" }
+          ]
+        },
+        {
+          "label": "数据治理",
+          "items": [
+            { "id": "meta", "label": "元数据管理" },
+            { "id": "quality", "label": "数据质量" }
+          ]
+        }
+      ]
+    }
+  ],
+  "flows": [
+    { "from": "portal", "to": "biz", "label": "HTTPS" },
+    { "from": "mobile", "to": "biz" },
+    { "from": "biz", "to": "flow", "label": "流程编排" },
+    { "from": "biz", "to": "db_biz", "label": "读写" },
+    { "from": "stat", "to": "report" },
+    { "from": "query", "to": "db_share", "style": "dash" }
+  ],
+  "legend": [
+    { "label": "重点业务模块", "tone": "accent" },
+    { "label": "一般模块", "tone": "default" },
+    { "label": "外部系统", "tone": "ghost" }
+  ],
+  "notes": ["支撑层与数据层为逻辑分层，物理部署可合并"],
+  "footer": "内部资料 · 仅用于架构评审"
+}

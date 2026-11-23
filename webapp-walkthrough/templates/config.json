@@ -1,0 +1,47 @@
+{
+  "systemName": "示例系统",
+  "baseUrl": "http://127.0.0.1:8080",
+  "projectDir": "",
+  "outDir": "",
+  "spaceName": "",
+  "login": {
+    "required": false,
+    "usernameSelector": "input[name=username]",
+    "passwordSelector": "input[type=password]",
+    "submitText": "登录",
+    "username": "",
+    "password": ""
+  },
+  "menuSelector": "aside a, nav a, .el-menu-item, .ant-menu-item, [role=menuitem]",
+  "tabSelector": ".tab, [role=tab], .el-tabs__item, .ant-tabs-tab",
+  "safeButtons": ["查询", "搜索", "筛选", "检索", "刷新", "生成报表"],
+  "denyButtons": ["删除", "登出", "退出", "注销", "支付", "提交订单"],
+  "testQuery": "E2E演示",
+  "queryByModule": {},
+  "skipPaths": ["/logout", "/export"],
+  "maxModules": 12,
+  "settleMs": 900,
+  "humanize": true,
+  "expandSubmenus": true,
+  "publish": {
+    "enabled": false,
+    "repo": "",
+    "branch": "main",
+    "dir": "论文",
+    "subdir": "",
+    "filename": "{system}_教学视频_{date}.mp4",
+    "includeDocs": false,
+    "localRepo": "",
+    "commit": "docs(演示视频): 新增《{system}》教学视频（{date}）"
+  },
+  "recorder": {
+    "width": 1440,
+    "height": 860,
+    "jpegQuality": 70
+  },
+  "voice": {
+    "engine": "edge",
+    "name": "zh-CN-YunxiNeural",
+    "rate": 1
+  }
+}

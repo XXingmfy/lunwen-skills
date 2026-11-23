@@ -1,0 +1,259 @@
+{
+  "figure": "图4.2 用户注册登录流程图",
+  "type": "flow",
+  "sequence": [
+    "s",
+    "p1",
+    "d1",
+    "p4",
+    "d2",
+    "p6",
+    "p7",
+    "p8",
+    "e"
+  ],
+  "nodes": [
+    {
+      "id": "s",
+      "kind": "ellipse",
+      "text": "开始",
+      "x": 2.85,
+      "y": 0.12,
+      "w": 1.1,
+      "h": 0.46
+    },
+    {
+      "id": "p1",
+      "kind": "box",
+      "text": "进入登录页面",
+      "x": 2.25,
+      "y": 0.76,
+      "w": 2.3,
+      "h": 0.46
+    },
+    {
+      "id": "d1",
+      "kind": "diamond",
+      "text": "是否已有账号",
+      "x": 2.25,
+      "y": 1.46,
+      "w": 2.3,
+      "h": 0.72,
+      "size": 9.5
+    },
+    {
+      "id": "p2",
+      "kind": "box",
+      "text": "创建用户账号",
+      "x": 0.22,
+      "y": 1.94,
+      "w": 1.5,
+      "h": 0.48
+    },
+    {
+      "id": "p3",
+      "kind": "box",
+      "text": "写入用户信息",
+      "x": 0.22,
+      "y": 2.72,
+      "w": 1.5,
+      "h": 0.48
+    },
+    {
+      "id": "p4",
+      "kind": "box",
+      "text": "输入手机号和验证码/密码",
+      "x": 2.25,
+      "y": 2.72,
+      "w": 2.3,
+      "h": 0.48
+    },
+    {
+      "id": "d2",
+      "kind": "diamond",
+      "text": "登录信息是否正确",
+      "x": 2.25,
+      "y": 3.46,
+      "w": 2.3,
+      "h": 0.72,
+      "size": 9.5
+    },
+    {
+      "id": "p5",
+      "kind": "box",
+      "text": "提示错误\n重新输入",
+      "x": 5.32,
+      "y": 3.51,
+      "w": 1.35,
+      "h": 0.62
+    },
+    {
+      "id": "p6",
+      "kind": "box",
+      "text": "生成 JWT Token",
+      "x": 2.25,
+      "y": 4.52,
+      "w": 2.3,
+      "h": 0.48
+    },
+    {
+      "id": "p7",
+      "kind": "box",
+      "text": "保存登录状态",
+      "x": 2.25,
+      "y": 5.22,
+      "w": 2.3,
+      "h": 0.48
+    },
+    {
+      "id": "p8",
+      "kind": "box",
+      "text": "进入个人中心或返回原页面",
+      "x": 2.25,
+      "y": 5.92,
+      "w": 2.3,
+      "h": 0.48
+    },
+    {
+      "id": "e",
+      "kind": "ellipse",
+      "text": "结束",
+      "x": 2.85,
+      "y": 6.62,
+      "w": 1.1,
+      "h": 0.46
+    }
+  ],
+  "edges": [
+    {
+      "from": "s",
+      "to": "p1",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "end"
+    },
+    {
+      "from": "p1",
+      "to": "d1",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "end"
+    },
+    {
+      "from": "d1",
+      "to": "p2",
+      "from_side": "left",
+      "to_side": "top",
+      "points": [
+        [
+          0.97,
+          1.82
+        ]
+      ],
+      "label": "否",
+      "label_xy": [
+        1.55,
+        1.74
+      ],
+      "arrow": "end"
+    },
+    {
+      "from": "p2",
+      "to": "p3",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "end"
+    },
+    {
+      "from": "p3",
+      "to": "p4",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "完成注册",
+      "label_xy": [
+        2.02,
+        2.58
+      ],
+      "label_size": 8.5,
+      "arrow": "end"
+    },
+    {
+      "from": "d1",
+      "to": "p4",
+      "from_side": "bottom",
+      "to_side": "top",
+      "label": "是",
+      "label_xy": [
+        3.62,
+        2.38
+      ],
+      "arrow": "end"
+    },
+    {
+      "from": "p4",
+      "to": "d2",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "end"
+    },
+    {
+      "from": "d2",
+      "to": "p5",
+      "from_side": "right",
+      "to_side": "left",
+      "label": "否",
+      "label_xy": [
+        4.92,
+        3.62
+      ],
+      "arrow": "end"
+    },
+    {
+      "from": "p5",
+      "to": "p4",
+      "from_side": "top",
+      "to_side": "right",
+      "points": [
+        [
+          5.995,
+          2.96
+        ]
+      ],
+      "arrow": "end"
+    },
+    {
+      "from": "d2",
+      "to": "p6",
+      "from_side": "bottom",
+      "to_side": "top",
+      "label": "是",
+      "label_xy": [
+        3.62,
+        4.22
+      ],
+      "arrow": "end"
+    },
+    {
+      "from": "p6",
+      "to": "p7",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "end"
+    },
+    {
+      "from": "p7",
+      "to": "p8",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "end"
+    },
+    {
+      "from": "p8",
+      "to": "e",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "end"
+    }
+  ],
+  "margin": 0.18
+}

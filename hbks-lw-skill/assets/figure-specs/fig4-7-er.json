@@ -1,0 +1,566 @@
+{
+  "figure": "图4.7 系统总体E-R图",
+  "type": "er",
+  "margin": 0.18,
+  "nodes": [
+    {
+      "id": "addr",
+      "kind": "box",
+      "text": "地址",
+      "x": 0.25,
+      "y": 0.12,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "log",
+      "kind": "box",
+      "text": "订单日志",
+      "x": 4.75,
+      "y": 0.12,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "eval",
+      "kind": "box",
+      "text": "设备评价",
+      "x": 8.55,
+      "y": 0.12,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "user",
+      "kind": "box",
+      "text": "用户",
+      "x": 0.25,
+      "y": 1.92,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "order",
+      "kind": "box",
+      "text": "租赁订单",
+      "x": 4.75,
+      "y": 1.92,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "device",
+      "kind": "box",
+      "text": "手机设备",
+      "x": 8.55,
+      "y": 1.92,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "ucoupon",
+      "kind": "box",
+      "text": "用户优惠券",
+      "x": 0.25,
+      "y": 3.82,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "post",
+      "kind": "box",
+      "text": "社区帖子",
+      "x": 3.05,
+      "y": 3.82,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "pay",
+      "kind": "box",
+      "text": "支付记录",
+      "x": 4.75,
+      "y": 3.82,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "aicmp",
+      "kind": "box",
+      "text": "AI对比记录",
+      "x": 8.55,
+      "y": 3.82,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "template",
+      "kind": "box",
+      "text": "优惠券模板",
+      "x": 0.25,
+      "y": 5.72,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "comment",
+      "kind": "box",
+      "text": "帖子评论",
+      "x": 3.05,
+      "y": 5.72,
+      "w": 1.3,
+      "h": 0.48,
+      "size": 9
+    },
+    {
+      "id": "r_addr",
+      "kind": "diamond",
+      "text": "拥有",
+      "x": 0.4,
+      "y": 0.92,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_log",
+      "kind": "diamond",
+      "text": "产生",
+      "x": 4.9,
+      "y": 0.92,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_eval",
+      "kind": "diamond",
+      "text": "评价",
+      "x": 8.7,
+      "y": 0.92,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_order",
+      "kind": "diamond",
+      "text": "下单",
+      "x": 2.35,
+      "y": 1.885,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_rent",
+      "kind": "diamond",
+      "text": "租赁",
+      "x": 6.6,
+      "y": 1.885,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_pay",
+      "kind": "diamond",
+      "text": "支付",
+      "x": 4.9,
+      "y": 2.97,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_uc",
+      "kind": "diamond",
+      "text": "拥有",
+      "x": 0.4,
+      "y": 2.82,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_post",
+      "kind": "diamond",
+      "text": "拥有",
+      "x": 1.85,
+      "y": 2.62,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_from",
+      "kind": "diamond",
+      "text": "来源于",
+      "x": 0.4,
+      "y": 4.72,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_contains",
+      "kind": "diamond",
+      "text": "包含",
+      "x": 3.2,
+      "y": 4.72,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    },
+    {
+      "id": "r_cmp",
+      "kind": "diamond",
+      "text": "对比",
+      "x": 8.7,
+      "y": 2.97,
+      "w": 1.0,
+      "h": 0.55,
+      "size": 8.5
+    }
+  ],
+  "edges": [
+    {
+      "from": "addr",
+      "to": "r_addr",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_addr",
+      "to": "user",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "log",
+      "to": "r_log",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_log",
+      "to": "order",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "eval",
+      "to": "r_eval",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_eval",
+      "to": "device",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "user",
+      "to": "r_order",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "r_order",
+      "to": "order",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "order",
+      "to": "r_rent",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "r_rent",
+      "to": "device",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "order",
+      "to": "r_pay",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_pay",
+      "to": "pay",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "user",
+      "to": "r_uc",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_uc",
+      "to": "ucoupon",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "user",
+      "to": "r_post",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_post",
+      "to": "post",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "ucoupon",
+      "to": "r_from",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_from",
+      "to": "template",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "post",
+      "to": "r_contains",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_contains",
+      "to": "comment",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "device",
+      "to": "r_cmp",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    },
+    {
+      "from": "r_cmp",
+      "to": "aicmp",
+      "from_side": "bottom",
+      "to_side": "top",
+      "arrow": "none"
+    }
+  ],
+  "texts": [
+    {
+      "text": "1: N",
+      "x": 1.05,
+      "y": 0.72,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1",
+      "x": 1.02,
+      "y": 1.68,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1: N",
+      "x": 1.25,
+      "y": 1.62,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "N",
+      "x": 4.38,
+      "y": 1.8,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "N",
+      "x": 6.18,
+      "y": 1.8,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "N: 1",
+      "x": 7.68,
+      "y": 1.8,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1: N",
+      "x": 5.42,
+      "y": 0.62,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1",
+      "x": 5.48,
+      "y": 1.62,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1: N",
+      "x": 5.42,
+      "y": 3.52,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1",
+      "x": 5.48,
+      "y": 2.66,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "N: M",
+      "x": 9.22,
+      "y": 0.72,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "N: M",
+      "x": 9.22,
+      "y": 3.52,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1",
+      "x": 1.02,
+      "y": 2.62,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1: N",
+      "x": 1.02,
+      "y": 3.62,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "N: 1",
+      "x": 1.02,
+      "y": 4.52,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1",
+      "x": 1.75,
+      "y": 2.38,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1: N",
+      "x": 2.98,
+      "y": 3.38,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1",
+      "x": 3.22,
+      "y": 4.58,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    },
+    {
+      "text": "1: N",
+      "x": 3.22,
+      "y": 5.56,
+      "w": 0.5,
+      "h": 0.2,
+      "size": 8,
+      "align": "center"
+    }
+  ]
+}

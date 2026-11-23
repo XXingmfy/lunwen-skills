@@ -1,0 +1,20 @@
+# 密钥与本地文件，绝不入库
+secrets.env
+*.env
+**/.browser-profile/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+*.key
+*.pem
+token*.txt
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 运行产物
+**/output/
+**/figs/*.png
+**/run/

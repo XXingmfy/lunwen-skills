@@ -1,0 +1,98 @@
+# 毕设论文流水线配置
+# 注意：这里不放任何密码/令牌。令牌写在 secrets.env（见同目录），或设为环境变量。
+
+yunxiao:
+  # Region 版企业域名（不是 openapi-rdc.aliyuncs.com）
+  domain: example-cn-beijing.devops.aliyuncs.com
+  # git over HTTPS 的用户名，必须是云效登录账号，不是 oauth2
+  user: your_yunxiao_user
+  # Projex 项目：毕设项目存放
+  project_id: your_project_id
+  # Codeup 仓库命名空间
+  namespace: your_namespace
+
+paths:
+  # 【硬规定】所有下载/产出的本地文件只允许落在这里：<runs_root>\<代码库号>\
+  # 代码库号即仓库 path，例如 bishe010
+  runs_root: D:\Tools_Home\DeepseekHarness_Load\lw
+  materials_dir: 开题材料
+  source_dir: 源码
+  output_dir: 论文
+
+# 论文生产引擎：ty-lw-skill（通用、档案驱动）
+# 不再直接调用 hbks-lw-skill；河北科技师范学院只是「档案库里的一个档案」
+engine:
+  ty_skill_dir: C:\Users\<user>\.dsh\skills\ty-lw-skill
+  # 学校格式档案库（本技能自己维护）
+  profiles_dir: C:\Users\<user>\.dsh\skills\bishe-lw\profiles
+  # 找不到档案时的行为：block = 拒绝开工并提示补模板；baseline = 用内置基线但明确告警
+  on_missing_profile: block
+  # 内置兜底档案（= 河北科技师范学院基线）
+  baseline_profile: C:\Users\<user>\.dsh\skills\ty-lw-skill\assets\profiles\hbks-baseline.json
+
+# 学校 → 档案
+# template_format 只用于解析「任务书/开题报告」的字段版式，与论文排版无关
+#   A：题目为裸段落，字段形如「学 生 姓 名：张三」
+#   B：题目在「毕业设计题目:」后，字段形如「姓名: 张三   学 号:」
+schools:
+  河北科技师范学院:
+    template_format: A
+    profile: 河北科技师范学院.json
+  河北工程技术学院:
+    template_format: B
+    profile: null          # 尚未提取；提供该校论文模板 .docx 后一条命令即可补齐
+
+# 上传文件命名：{学号}_{姓名}_{专业}_{题目}
+naming: "{学号}_{姓名}_{专业}_{题目}"
+
+# 上传前必须齐的字段；缺任何一个就拒绝推送
+required_fields:
+  - 学号
+  - 姓名
+  - 专业
+  - 题目
+
+# 质检：朱雀 AIGC 检测 + 联网溯源查重
+quality:
+  zhuque:
+    endpoint: https://ai-gateway.edgeone.link/v1/providers/zhuque-text/classify
+    # 单次调用送多少字；接口按 token 计费，切块便于定位问题段落
+    chunk_chars: 3000
+    # AI 率达标线（0.10 = 10%）
+    target_ai_rate: 0.10
+    # 改写循环最多跑几轮
+    max_rounds: 4
+  plagiarism:
+    # 逐句溯源：只查这么长的句子
+    min_sentence_chars: 25
+    # 每次最多抽多少句去搜（控制耗时）
+    max_candidates: 40
+
+# 参考文献口径（硬规定，2026-11-16）
+#   1) 必须优先采用任务书/开题报告里列出的参考文献，并联网在知网检索原文；
+#   2) 其余中文文献从云效仓库 论文/论文推荐 里抽取；
+#   3) 每篇论文参考文献总数 15–35 篇；
+#   4) 英文文献：河北科技师范学院只要 1 篇，且必须用开题材料目录下的外文原文；
+#      其他学校默认上限 max_english（3）篇。
+# 题录缺作者/刊名时：先读仓库里该篇的 pdf/caj/md，读不出可联网按题名核对；
+# 结果写进 .work/refs/meta-results.json，由 refs merge 合并。不许换成库外文献、不许编造。
+refs:
+  mode: repo_library
+  zh_source_dir: 论文/论文推荐
+  en_source_glob:
+    - 开题材料/外文原文*.pdf
+    - 开题材料/外文文献*.pdf
+  min_total: 15
+  max_total: 35
+  require_english: true
+  max_english: 3
+  # 按学校收紧英文配额：这些学校的英文文献只用外文原文那 1 篇
+  english_by_school:
+    河北科技师范学院: 1
+  # 任务书/开题报告里的中文题录必须全部用上
+  require_opening: true
+  # 是否允许联网按题名检索核对题录（只补元数据，不换文献）
+  allow_online_enrich: true
+  # 缺作者是否阻断发布：只有 md 题录时作者无从核对，默认只告警并点名；
+  # 设为 true 则缺作者直接拦住。
+  require_authors: false

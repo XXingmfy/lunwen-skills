@@ -1,0 +1,56 @@
+{
+  "systemName": "示例系统（填真实系统名）",
+  "baseUrl": "http://127.0.0.1:8080",
+  "viewport": { "width": 1440, "height": 860 },
+  "cardMs": 2000,
+  "intro": "大家好，本期视频带你完整掌握「示例系统」的全部功能，按真实操作顺序分章节演示。",
+  "outro": "以上就是示例系统的完整教学演示，感谢观看。",
+  "chapters": [
+    {
+      "title": "登录与首页",
+      "summary": "从登录入口进入系统，认识首页的数据总览。",
+      "steps": [
+        {
+          "title": "账号登录",
+          "url": "/login",
+          "narration": "先输入账号密码，点击登录进入系统。系统区分不同角色，登录后菜单不同。",
+          "tips": "演示账号 admin / 123456",
+          "actions": [
+            { "type": "fill", "selector": "input[placeholder=\"用户名\"]", "value": "admin" },
+            { "type": "fill", "selector": "input[placeholder=\"密码\"]", "value": "123456" },
+            { "type": "click", "selector": "button.el-button", "label": "点击登录" },
+            { "type": "wait", "ms": 1500 }
+          ],
+          "holdMs": 1400
+        },
+        {
+          "title": "首页概览",
+          "url": "/",
+          "narration": "首页集中展示核心指标与趋势图表，一眼掌握全局。",
+          "tips": "首页即驾驶舱",
+          "highlight": { "selector": ".grid-4" },
+          "holdMs": 1800
+        }
+      ]
+    },
+    {
+      "title": "核心业务",
+      "summary": "演示核心业务页面的查询与详情。",
+      "steps": [
+        {
+          "title": "列表查询",
+          "url": "/items",
+          "narration": "在列表页输入关键字查询，点任意一行查看详情。",
+          "actions": [
+            { "type": "fill", "selector": "input[placeholder=\"搜索\"]", "value": "演示" },
+            { "type": "click", "text": "查询", "ms": 900 },
+            { "type": "click", "selector": ".el-table__body .el-table__row >> nth=0", "findSelector": ".el-table__row", "label": "打开详情" },
+            { "type": "wait", "ms": 1200 }
+          ],
+          "highlight": { "selector": ".el-drawer" },
+          "holdMs": 1600
+        }
+      ]
+    }
+  ]
+}

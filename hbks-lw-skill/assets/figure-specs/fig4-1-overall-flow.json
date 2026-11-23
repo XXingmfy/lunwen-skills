@@ -1,0 +1,130 @@
+{
+  "figure": "图4.1 系统总体设计流程图",
+  "type": "flow",
+  "sequence": [
+    "s",
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "e"
+  ],
+  "nodes": [
+    {
+      "id": "s",
+      "kind": "roundbox",
+      "text": "开始",
+      "x": 0.2,
+      "y": 0.25,
+      "w": 0.9,
+      "h": 0.5,
+      "size": 11
+    },
+    {
+      "id": "p1",
+      "kind": "box",
+      "text": "需求分析",
+      "x": 1.38,
+      "y": 0.25,
+      "w": 1.0,
+      "h": 0.5,
+      "size": 11
+    },
+    {
+      "id": "p2",
+      "kind": "box",
+      "text": "总体设计",
+      "x": 2.68,
+      "y": 0.25,
+      "w": 1.0,
+      "h": 0.5,
+      "size": 11
+    },
+    {
+      "id": "p3",
+      "kind": "box",
+      "text": "数据库设计",
+      "x": 3.98,
+      "y": 0.25,
+      "w": 1.05,
+      "h": 0.5,
+      "size": 11
+    },
+    {
+      "id": "p4",
+      "kind": "box",
+      "text": "功能开发",
+      "x": 5.33,
+      "y": 0.25,
+      "w": 1.0,
+      "h": 0.5,
+      "size": 11
+    },
+    {
+      "id": "p5",
+      "kind": "box",
+      "text": "系统测试",
+      "x": 6.63,
+      "y": 0.25,
+      "w": 1.0,
+      "h": 0.5,
+      "size": 11
+    },
+    {
+      "id": "e",
+      "kind": "roundbox",
+      "text": "结束",
+      "x": 7.93,
+      "y": 0.25,
+      "w": 0.9,
+      "h": 0.5,
+      "size": 11
+    }
+  ],
+  "edges": [
+    {
+      "from": "s",
+      "to": "p1",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "end"
+    },
+    {
+      "from": "p1",
+      "to": "p2",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "end"
+    },
+    {
+      "from": "p2",
+      "to": "p3",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "end"
+    },
+    {
+      "from": "p3",
+      "to": "p4",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "end"
+    },
+    {
+      "from": "p4",
+      "to": "p5",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "end"
+    },
+    {
+      "from": "p5",
+      "to": "e",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "end"
+    }
+  ],
+  "margin": 0.18
+}

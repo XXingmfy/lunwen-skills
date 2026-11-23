@@ -1,0 +1,189 @@
+{
+  "figure": "图3.1 普通用户用例图",
+  "type": "usecase",
+  "nodes": [
+    {
+      "id": "actor",
+      "kind": "actor",
+      "text": "普通用户",
+      "x": 0.3,
+      "y": 2.58,
+      "w": 0.95,
+      "h": 1.45,
+      "label": "普通用户"
+    },
+    {
+      "id": "u1",
+      "kind": "ellipse",
+      "text": "账号登录",
+      "x": 3.05,
+      "y": 0.22,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u2",
+      "kind": "ellipse",
+      "text": "浏览手机",
+      "x": 3.05,
+      "y": 0.84,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u3",
+      "kind": "ellipse",
+      "text": "搜索筛选",
+      "x": 3.05,
+      "y": 1.46,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u4",
+      "kind": "ellipse",
+      "text": "详情与收藏",
+      "x": 3.05,
+      "y": 2.08,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u5",
+      "kind": "ellipse",
+      "text": "租赁下单",
+      "x": 3.05,
+      "y": 2.7,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u6",
+      "kind": "ellipse",
+      "text": "支付订单",
+      "x": 3.05,
+      "y": 3.3200000000000003,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u7",
+      "kind": "ellipse",
+      "text": "订单管理",
+      "x": 3.05,
+      "y": 3.94,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u8",
+      "kind": "ellipse",
+      "text": "地址与优惠券",
+      "x": 3.05,
+      "y": 4.56,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u9",
+      "kind": "ellipse",
+      "text": "社区互动",
+      "x": 3.05,
+      "y": 5.18,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    },
+    {
+      "id": "u10",
+      "kind": "ellipse",
+      "text": "AI设备对比",
+      "x": 3.05,
+      "y": 5.8,
+      "w": 2.45,
+      "h": 0.46,
+      "size": 10
+    }
+  ],
+  "edges": [
+    {
+      "from": "actor",
+      "to": "u1",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u2",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u3",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u4",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u5",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u6",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u7",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u8",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u9",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    },
+    {
+      "from": "actor",
+      "to": "u10",
+      "from_side": "right",
+      "to_side": "left",
+      "arrow": "none"
+    }
+  ],
+  "margin": 0.18
+}

@@ -1,0 +1,613 @@
+{
+  "figure": "图4.6 系统功能模块结构图",
+  "type": "module",
+  "margin": 0.18,
+  "nodes": [
+    {
+      "id": "root",
+      "kind": "box",
+      "text": "手机租赁系统",
+      "x": 3.2,
+      "y": 0.18,
+      "w": 2.0,
+      "h": 0.45,
+      "size": 10
+    },
+    {
+      "id": "a",
+      "kind": "box",
+      "text": "微信小程序端",
+      "x": 0.35,
+      "y": 1.02,
+      "w": 1.6,
+      "h": 0.45,
+      "size": 9.5
+    },
+    {
+      "id": "b",
+      "kind": "box",
+      "text": "后台管理端",
+      "x": 3.4,
+      "y": 1.02,
+      "w": 1.6,
+      "h": 0.45,
+      "size": 9.5
+    },
+    {
+      "id": "c",
+      "kind": "box",
+      "text": "后端服务端",
+      "x": 6.45,
+      "y": 1.02,
+      "w": 1.6,
+      "h": 0.45,
+      "size": 9.5
+    },
+    {
+      "id": "a1",
+      "kind": "leaf",
+      "text": "首\n页\n展\n示",
+      "x": 0.3,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "a2",
+      "kind": "leaf",
+      "text": "设\n备\n浏\n览",
+      "x": 0.9199999999999999,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "a3",
+      "kind": "leaf",
+      "text": "租\n赁\n订\n单",
+      "x": 1.54,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "a4",
+      "kind": "leaf",
+      "text": "地\n址\n优\n惠\n券",
+      "x": 2.1599999999999997,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "a5",
+      "kind": "leaf",
+      "text": "社\n区\n互\n动",
+      "x": 2.78,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "a6",
+      "kind": "leaf",
+      "text": "A\nI\n设\n备\n对\n比",
+      "x": 3.4,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "b1",
+      "kind": "leaf",
+      "text": "首\n页\n统\n计",
+      "x": 3.34,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "b2",
+      "kind": "leaf",
+      "text": "用\n户\n管\n理",
+      "x": 3.96,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "b3",
+      "kind": "leaf",
+      "text": "设\n备\n管\n理",
+      "x": 4.58,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "b4",
+      "kind": "leaf",
+      "text": "订\n单\n管\n理",
+      "x": 5.199999999999999,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "b5",
+      "kind": "leaf",
+      "text": "社\n区\n管\n理",
+      "x": 5.82,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "b6",
+      "kind": "leaf",
+      "text": "优\n惠\n券\n/\n轮\n播\n图",
+      "x": 6.4399999999999995,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "b7",
+      "kind": "leaf",
+      "text": "系\n统\n配\n置",
+      "x": 7.06,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "c1",
+      "kind": "leaf",
+      "text": "认\n证\n鉴\n权",
+      "x": 6.4,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "c2",
+      "kind": "leaf",
+      "text": "设\n备\n服\n务",
+      "x": 7.0200000000000005,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "c3",
+      "kind": "leaf",
+      "text": "订\n单\n服\n务",
+      "x": 7.640000000000001,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "c4",
+      "kind": "leaf",
+      "text": "支\n付\n服\n务",
+      "x": 8.26,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "c5",
+      "kind": "leaf",
+      "text": "上\n传\n服\n务",
+      "x": 8.88,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    },
+    {
+      "id": "c6",
+      "kind": "leaf",
+      "text": "A\nI\n对\n比\n服\n务",
+      "x": 9.5,
+      "y": 1.9,
+      "w": 0.52,
+      "h": 1.55,
+      "size": 8.5
+    }
+  ],
+  "edges": [
+    {
+      "from": "a",
+      "to": "a1",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          1.15,
+          1.78
+        ],
+        [
+          0.56,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "a",
+      "to": "a2",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          1.15,
+          1.78
+        ],
+        [
+          1.18,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "a",
+      "to": "a3",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          1.15,
+          1.78
+        ],
+        [
+          1.8,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "a",
+      "to": "a4",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          1.15,
+          1.78
+        ],
+        [
+          2.42,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "a",
+      "to": "a5",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          1.15,
+          1.78
+        ],
+        [
+          3.04,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "a",
+      "to": "a6",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          1.15,
+          1.78
+        ],
+        [
+          3.66,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "b",
+      "to": "b1",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          1.78
+        ],
+        [
+          3.5999999999999996,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "b",
+      "to": "b2",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          1.78
+        ],
+        [
+          4.22,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "b",
+      "to": "b3",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          1.78
+        ],
+        [
+          4.84,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "b",
+      "to": "b4",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          1.78
+        ],
+        [
+          5.459999999999999,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "b",
+      "to": "b5",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          1.78
+        ],
+        [
+          6.08,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "b",
+      "to": "b6",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          1.78
+        ],
+        [
+          6.699999999999999,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "b",
+      "to": "b7",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          1.78
+        ],
+        [
+          7.319999999999999,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "c",
+      "to": "c1",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          7.25,
+          1.78
+        ],
+        [
+          6.66,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "c",
+      "to": "c2",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          7.25,
+          1.78
+        ],
+        [
+          7.28,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "c",
+      "to": "c3",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          7.25,
+          1.78
+        ],
+        [
+          7.9,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "c",
+      "to": "c4",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          7.25,
+          1.78
+        ],
+        [
+          8.52,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "c",
+      "to": "c5",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          7.25,
+          1.78
+        ],
+        [
+          9.14,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "c",
+      "to": "c6",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          7.25,
+          1.78
+        ],
+        [
+          9.76,
+          1.78
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "root",
+      "to": "a",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          0.86
+        ],
+        [
+          1.15,
+          0.86
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "root",
+      "to": "b",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          0.86
+        ],
+        [
+          4.2,
+          0.86
+        ]
+      ],
+      "arrow": "none"
+    },
+    {
+      "from": "root",
+      "to": "c",
+      "from_side": "bottom",
+      "to_side": "top",
+      "points": [
+        [
+          4.2,
+          0.86
+        ],
+        [
+          7.25,
+          0.86
+        ]
+      ],
+      "arrow": "none"
+    }
+  ]
+}
